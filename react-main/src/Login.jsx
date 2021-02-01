@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Modal, Button, Form } from "react-bootstrap";
+import { Modal, Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
@@ -7,15 +7,15 @@ function Login() {
     var [userObj, setUserObj] = useState({
         uid: "",
         pwd: "",
-        resp: ""
+        // resp: ""
 
 
     });
     //validation
-    var [errObj, setErrors] = useState({
-        uid: "*",
-        pwd: "*"
-    });
+    // var [errObj, setErrors] = useState({
+    //     uid: "*",
+    //     pwd: "*"
+    // });
 
     var doUpdate = (e) => {
         var { name, value } = e.target;
@@ -35,33 +35,33 @@ function Login() {
     var [show, setShow] = useState(false);
     var handleClose = () => setShow(false);
     var handleShow = () => setShow(true);
-    var err = () => {
-        var b = true;
-        if (userObj.uid.length == 0)
-            errObj.uid = <h6 style={{ color: "red" }}>Fill Uid</h6>;
-        else {
-            errObj.uid = <h6 style={{ color: "green" }}>Great</h6>;
-            b = false;
-        }
+    // var err = () => {
+    //     var b = true;
+    //     if (userObj.uid.length === 0)
+    //         errObj.uid = <h6 style={{ color: "red" }}>Fill Uid</h6>;
+    //     else {
+    //         errObj.uid = <h6 style={{ color: "green" }}>Great</h6>;
+    //         b = false;
+    //     }
 
-        if (userObj.pwd.length == 0)
-            errObj.pwd = <h6 style={{ color: "red" }}>Fill Password</h6>;
-        else {
+    //     if (userObj.pwd.length === 0)
+    //         errObj.pwd = <h6 style={{ color: "red" }}>Fill Password</h6>;
+    //     else {
 
-            b = false;
-            errObj.pwd = <h6 style={{ color: "green" }}>Great</h6>;
-        }
+    //         b = false;
+    //         errObj.pwd = <h6 style={{ color: "green" }}>Great</h6>;
+    //     }
 
-        setErrors(errObj);
-        if (b == false) {
-            setUserObj({
-                ...userObj,
-                ["resp"]: "",
-            });
-            b = true;
-        }
+    //     setErrors(errObj);
+    //     if (b === false) {
+    //         setUserObj({
+    //             ...userObj,
+    //             ["resp"]: "",
+    //         });
+    //         b = true;
+    //     }
 
-    };
+    // };
 
 
 
@@ -97,7 +97,7 @@ function Login() {
                     </Modal.Body>
                     <Modal.Footer>
 
-                        {userObj.resp}
+                        {/* {userObj.resp} */}
                         <Button variant="primary" type="button" onClick={() => { doLogin(); err(); }} > Login </Button>
 
                     </Modal.Footer>
