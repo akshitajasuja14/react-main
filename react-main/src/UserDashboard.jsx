@@ -42,7 +42,7 @@ function UserDashboard() {
             <Card>
               <Card.Body>
                 <center>
-                  <img className="rounded mb-0" alt="Selected picture preview" src="pics/user icon 2.png" style={{ width: "50%", height: "40%" }} />
+                  <img className="rounded mb-0" alt="Selected picture preview" src="./Pics/user icon 2.png" style={{ width: "50%", height: "40%" }} />
                 </center>
 
                 <Card.Title><b>Profile</b></Card.Title>
@@ -61,7 +61,7 @@ function UserDashboard() {
             <Card>
               <Card.Body>
                 <center>
-                  <img className="rounded mb-0" alt="Selected picture preview" src="pics/med1.jpg" style={{ width: "70%", height: "80%" }} />
+                  <img className="rounded mb-0" alt="Selected picture preview" src="./Pics/med1.jpg" style={{ width: "70%", height: "80%" }} />
                 </center>
                 <br></br>
                 <Card.Title><b>Post medicine</b></Card.Title>
@@ -81,7 +81,7 @@ function UserDashboard() {
             <Card>
               <Card.Body>
                 <center>
-                  <img className="rounded mb-0" alt="Selected picture preview" src="pics/med4.jpg" style={{ width: "70%", height: "80%" }} />
+                  <img className="rounded mb-0" alt="Selected picture preview" src="./Pics/med4.jpg" style={{ width: "70%", height: "80%" }} />
                 </center>
                 <br></br>
                 <Card.Title><b>Medicine Manager</b></Card.Title>
@@ -101,7 +101,7 @@ function UserDashboard() {
             <Card>
               <Card.Body>
                 <center>
-                  <img className="rounded mb-0" alt="Selected picture preview" src="pics/med3.jpg" style={{ width: "62%", height: "75%" }} />
+                  <img className="rounded mb-0" alt="Selected picture preview" src="./Pics/med3.jpg" style={{ width: "62%", height: "75%" }} />
                 </center>
                 <br></br>
                 <Card.Title><b>Medicine Search</b></Card.Title>
