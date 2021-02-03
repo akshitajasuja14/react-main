@@ -8,7 +8,7 @@ function FrontPage() {
             
                 <NavbarRouter></NavbarRouter>
                 <Card className=" text-dark">
-                    <Card.Img src="pics/donate3.jpg" varriant="left" alt="Card image" />
+                    <Card.Img src="./Pics/donate3.jpg" varriant="left" alt="Card image" />
                     <Card.ImgOverlay>
                     <Card.Title className=" text-black"><h1><i style={{ color: "" }}>Donate for a better world..</i></h1></Card.Title>
                         <Card.Text
